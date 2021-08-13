@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:orientation="vertical" android:id="@id/appbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="50.0dip" android:minHeight="?actionBarSize" app:layout_scrollFlags="enterAlways|scroll|snap" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:title="@string/app_name" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout android:id="@id/cnnt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/appbar">
+        <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <FrameLayout android:id="@id/customViewContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/webCont" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar android:id="@id/progDet" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:indeterminate="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:cpb_colors="@array/colorsSmooth" />
+        <RelativeLayout android:id="@id/errorCont" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <TextView android:textSize="50.0dip" android:textColor="@color/grey500" android:id="@id/sadface" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":(" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/grey500" android:id="@id/errorMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="Please check your Network Settings !" android:layout_below="@id/sadface" android:layout_centerHorizontal="true" />
+            <Button android:id="@id/retryButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Retry" android:layout_below="@id/errorMsg" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <com.google.android.gms.ads.AdView android:id="@id/adView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:adSize="BANNER" app:adUnitId="@string/banner_ad_unit_id" />
+    </RelativeLayout>
+</RelativeLayout>

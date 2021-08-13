@@ -9,9 +9,9 @@ Application (Andriod) : https://github.com/sky9262/Pet-Shop/raw/main/PetShop.apk
 <img src="https://github.com/sky9262/Pet-Shop/blob/main/img/Preview.gif" alt="Preview-Image" height="400"/>
 
 # Admin login
-username : admin
+username : admin <br /> 
 password : admin123
 
 # user login
-username : sky
+username : sky <br /> 
 password : sky123

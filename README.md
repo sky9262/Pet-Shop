@@ -5,6 +5,7 @@ A andriod application for Pet Shop (Login page only)
 Webpage (Mobile only): https://rebrand.ly/pet-shop
 
 Application (Andriod) : https://github.com/sky9262/Pet-Shop/raw/main/PetShop.apk
+<br /> 
 <img src="https://github.com/sky9262/Pet-Shop/blob/main/img/Preview.gif" alt="Preview-Image" height="400"/>
 
 # Admin login

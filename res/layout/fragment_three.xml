@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/tv1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
-    <Button android:id="@id/openApp" android:background="@android:color/white" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginRight="0.0dip" android:text="start" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
-</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_social" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/image" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/spla" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/image" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <Button android:id="@id/website" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="les annonces immobilières du Sénégal" />
+            <Button android:id="@id/facebook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Facebook Businext Immobilier" />
+            <Button android:id="@id/twitter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Twitter Immobilier221" />
+        </LinearLayout>
+        <TextView android:textColor="@color/grey700" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/splash_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>
